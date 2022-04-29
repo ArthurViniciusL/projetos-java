@@ -6,19 +6,16 @@ public class DesafioData {
 	private int mes;
 	private int ano;
 	
-	//construtor com valor default
-	public DesafioData() {
-		this.dia = 1;
-		this.mes = 1;
-		this.ano = 1970;
-	}
 	//construtor
 	public DesafioData(int dia, int mes, int ano) {
 		this.dia = dia;
 		this.mes = mes;
 		this.ano = ano;
 	}
-	
+	//construtor com valor default
+	public DesafioData() {
+		this(1, 1, 1970);
+	}	
 	
 	//métdos
 	public String formateData() {
